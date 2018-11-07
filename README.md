@@ -2,6 +2,10 @@
 
 > 🅰️ Parse font file (TTF, OTF) metadata like font family name.
 
+## Demo
+
+Upload a font and see the results at: https://danbovey.uk/fontname/
+
 ## Install
 
 `npm install fontname`
