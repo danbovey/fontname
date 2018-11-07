@@ -2,9 +2,11 @@
 
 > 🅰️ Parse font file (TTF, OTF) metadata like font family name.
 
+[![](https://img.shields.io/npm/v/fontname.svg)](https://www.npmjs.com/package/fontname)
+
 ## Demo
 
-Upload a font and see the results at: https://danbovey.uk/fontname/
+Upload a font and see the results at: https://danbovey.uk/fontname
 
 ## Install
 
