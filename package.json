@@ -1,11 +1,8 @@
 {
   "name": "fontname",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "🅰️  Parse font file (TTF, OTF) metadata like font family name.",
   "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
