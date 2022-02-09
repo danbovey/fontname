@@ -1,4 +1,4 @@
-# fontname 
+# fontname
 
 > 🅰️ Parse font file (TTF, OTF) metadata like font family name.
 
@@ -20,7 +20,7 @@ Upload a font and see the results at: https://danbovey.uk/fontname
 
 Parses an ArrayBuffer (binary data of the font from a FileReader) and returns an object with font meta. Throws on failure.
 
-### Example Use
+### Example (browser)
 
 ```js
 import FontName from 'fontname';
@@ -32,11 +32,25 @@ reader.onload = e => {
   try {
     const fontMeta = FontName.parse(e.target.result)[0];
     console.log(fontMeta);
-  } catch(e) {
-      // FontName may throw an Error
+  } catch (e) {
+    // FontName may throw an Error
   }
 };
 reader.readAsArrayBuffer(fontFile);
+```
+
+### Example (node)
+
+```js
+const fs = require('fs');
+const FontName = require('fontname');
+
+try {
+  const fontMeta = FontName.parse(fs.readFileSync('font.tff'))[0];
+  console.log(fontMeta);
+} catch (e) {
+  // FontName may throw an Error
+}
 ```
 
 ### Returns
@@ -60,6 +74,6 @@ reader.readAsArrayBuffer(fontFile);
 }
 ```
 
-# License
+## License
 
 File parsing logic from [Typr.js](https://github.com/photopea/Typr.js).
