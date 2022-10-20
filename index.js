@@ -127,7 +127,9 @@
       "wwsFamilyName",
       "wwsSubfamilyName",
       "lightPalette",
-      "darkPalette"
+      "darkPalette",
+      "preferredFamily",
+      "preferredSubfamily",
     ];
 
     var offset0 = offset;
